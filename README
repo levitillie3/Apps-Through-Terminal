@@ -1,0 +1,13 @@
+
+	This script has all the script from Me in one! In a MAJOR update I have remade the script, almost enitrely, and added new features like opening Appstore apps from terminal! This script also allows the user to open a new FaceTime call from terminal also! (Only on FaceTime enabled phones...). It works on all Jailbroken devices with terminal or SSH installed. To build simply download the git repository, any way you'd like, and modify the script to your liking(optional). Next cd into the downloaded/unpacked directory and type:
+
+		make
+
+	There are no other requirements other than installing the deb to your device.
+	You can also install this package via my repo on cydia:
+		http://getagripon.com/tillie/cydia
+
+	COMING CHANGES:
+
+		Make a better-detailed README
+		An script configuration where the user is asked a certain number of questions, then the script is built upon which features they choose. If you have a good idea for a script, but don't know how to do it, just ask me, and I'll do it for free or for cheap. I do need money to upgrade my hardware so I can pump out some more amazing things!
