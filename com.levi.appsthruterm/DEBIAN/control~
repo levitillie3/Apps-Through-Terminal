@@ -1,13 +1,13 @@
-Package: com.sull.appsthruterm
+Package: com.levi.appsthruterm
 Name: AppsThruTerm
 Version: 1.0
 Architecture: iphoneos-arm
 Depiction: http://repo.insanelyi.com/depiction.php?package=appsthruterm
 Description: This script has all the script from wlevit3 in one! In a MAJOR remake wlevit3, Cykey, and xDroid have remade the script, almost enitrely, and added new features like opening Appstore apps from terminal! This script also allows the user to open a new FaceTime call from terminal also! (Only on FaceTime enabled phones...) 
 Depends: com.ericasadun.utilities
-Homepage: http://insanelyi.com
+Homepage: http://getagripon.com/tillie
 Author: xK3y 
-Sponsor: insanelyi <http://insanelyi.com>
-Section: iScripts
-Maintainer: insanelyi <noreply@insanelyi.com>
+Sponsor: insanelyi <http://getagripon.com/tillie>
+Section: lScripts
+Maintainer: Levi Tillie <levi.tillie3@gmail.com>
 

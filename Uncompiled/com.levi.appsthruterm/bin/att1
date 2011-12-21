@@ -1,0 +1,130 @@
+#/bin/sh
+#This script is used as a shortcut to all my #other thruTerm packages!
+#this requires EricaUtilities
+#By xK3y team
+#This script must be run as Root
+#Use this as your own. If it fails its not our fault.
+
+if [ "$(id -u)" -eq 0 ] ; then
+
+case "$1" in
+     -c) echo "Where would you like to go?
+Usage:
+-h           cydia home
+-p           packages
+-s           sources
+-t           storage"
+echo "Enter Choice:"
+         read x
+case $x in
+        -h)    echo "Opening Cydia home"
+               openURL cydia:// ;;
+                           
+        -p)    echo "Opening Cydia to Packages"
+               openURL cydia://packages ;;
+                           
+        -s)    echo "Opening Cydia to Sources"
+               openURL cydia://sources ;;
+               
+        -t)    echo "Opening Cydia to Storage"
+               openURL cydia://storage ;;
+                                
+        esac ;;
+     -f) echo "Where would you like to go?
+Usage:
+-h           iFile home
+-ld          Library/Downloads
+-md          Media/Downloads
+-l           Last-used
+-r           root
+-I           Installous Downloads
+-D           Documents
+-DD          Documents/Documents"
+echo "Enter Choice:"
+         read y
+case $y in
+         -h) ifile -h
+              exit ;;
+        -ld) ifile -ld
+              exit ;;
+        -md) ifile -md
+              exit ;;
+         -l) ifile -l
+              exit ;;
+         -r) ifile -r
+              exit ;;
+         -I) ifile -I
+              exit ;;
+         -D) ifile -D
+              exit ;;
+        -DD) ifile -DD
+              exit ;;
+        esac ;;
+        -y)    echo "Opening Youtube"
+               openURL youtube:// ;;
+                           
+        -i)    echo "Opening iTunes"
+               openURL itms:// ;;
+                           
+        -a)    echo "Opening AppStore"
+               openURL itms-apps:// ;;
+               
+        -g)    echo "Opening Google earth"
+               openURL comgoogleearth:// ;;
+         
+        -c)    echo"Opening Gamecenter"
+               openURL gamecenter:// ;;    
+               
+        -r)    echo "Opening an IRC client"
+               openURL irc:// ;;
+               
+        -m)    echo "Opening Maps"
+               openURL maps:// ;;
+               
+        -ssh)  echo "Opening iSSH"
+               openURL ssh:// ;;
+
+        -os)   echo "Opening iOS Diagnostics.app"
+               openURL diags:// ;;
+
+        -fc)   echo "Opening Facetime"
+	           openURL facetime://AppsThruTerm@live.com ;;
+	     
+	    -fa)   echo "Type an E-mail/Phone number"
+
+			   read x
+			   
+			   openURL facetime-prompt://"$x" ;;
+		
+		-cc) echo "Type an app name (CASE SENSITIVE)"
+		
+		read x
+		
+		openURL $x"://" &> /dev/null ;;	
+
+			   
+
+	
+	     esac ;       
+case $l in
+	     
+*) echo "Usage:
+-c      cydia
+-f      ifile (REQUIRES iFile)
+-y      YouTube
+-i      iTunes
+-a      AppStore
+-g      Opens GoogleEarth (REQUIRES GoogleEarth)
+-r      Opens an IRC client (colloquy , rooms... REQUIRES IRC CLIENT)
+-m      Maps
+-ssh    iSSH app (REQUIRES iSSH)
+-os     iOS Diagnostics.app (REQUIRES 4.X)
+-fc     Facetime 
+-fa     Facetime an someone
+-cc     **BETA** Open Any App :) "
+esac ;
+
+else echo "please run this script as root!"
+
+exit
+fi

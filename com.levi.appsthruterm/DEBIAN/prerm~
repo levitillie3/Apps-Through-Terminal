@@ -5,5 +5,3 @@ if [ ! -e /bin/att1];
 	then mv /bin/att /bin/att1 ;
 
 else mv /bin/att /bin/att2
-
-fi
