@@ -1,7 +1,0 @@
-#!/bin/sh
-
-if [ ! -e /Applications/MobilePhone.app/Icon-FaceTime.png ];
-
-	then mv /bin/att2 /bin/att ;
-
-else mv /bin/att1 /bin/att
